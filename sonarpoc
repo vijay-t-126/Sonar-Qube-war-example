@@ -12,7 +12,7 @@ pipeline {
         stage('Build & SonarQube Analysis') {
             steps {
                 script {
-                    def mvn = tool 'maven'
+                    def mvn = tool 'maven' 
                     
                     withSonarQubeEnv('SonarQube') {
                         sh """
